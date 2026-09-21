@@ -72,15 +72,6 @@ export default function Nav() {
             </a>
           ))}
           <a
-            href={config.whatsapp}
-            className="lu-menu__whatsapp"
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={toggleMenu}
-          >
-            Escribinos
-          </a>
-          <a
             href={config.agendaUrl}
             className="lu-btn-solid lu-menu__cta"
             target="_blank"

@@ -27,7 +27,6 @@ const COLUMNS = [
     title: 'CONTACTO',
     links: [
       { label: config.email, href: `mailto:${config.email}` },
-      { label: 'WhatsApp', href: config.whatsapp, external: true },
       { label: 'Agendar diagnóstico', href: config.agendaUrl, external: true, onClick: openAgenda },
     ],
   },

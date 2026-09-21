@@ -1,5 +1,4 @@
 import CircuitButton from './CircuitButton.jsx'
-import { config } from '../config.js'
 import './FinalCta.css'
 
 export default function FinalCta() {
@@ -13,11 +12,6 @@ export default function FinalCta() {
           trabajemos juntos.
         </p>
         <CircuitButton size="cta" />
-        <div className="lu-final__alt">
-          <a href={config.whatsapp} target="_blank" rel="noopener noreferrer">
-            o escribinos por WhatsApp
-          </a>
-        </div>
       </div>
     </section>
   )

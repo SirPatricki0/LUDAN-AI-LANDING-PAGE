@@ -122,13 +122,6 @@
   color: var(--lu-text-hi);
 }
 
-.lu-menu__whatsapp {
-  margin-top: 6px;
-  font-size: 20px;
-  font-weight: 700;
-  color: var(--lu-copper-lite);
-}
-
 .lu-menu__cta {
   justify-content: center;
   width: min(320px, 80vw);
