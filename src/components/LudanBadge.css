@@ -1,0 +1,25 @@
+.lu-badge {
+  flex-shrink: 0;
+  display: block;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.lu-badge--nav {
+  width: 32px;
+  height: 32px;
+  border-radius: 7px;
+}
+
+.lu-badge--footer {
+  width: 36px;
+  height: 36px;
+  border-radius: 7.9px;
+}
+
+@media (max-width: 768px) {
+  .lu-badge--nav {
+    width: 28px;
+    height: 28px;
+    border-radius: 6.1px;
+  }
+}

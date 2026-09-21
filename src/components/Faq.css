@@ -1,0 +1,57 @@
+.lu-faq {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 var(--lu-gutter);
+}
+
+.lu-faq__item {
+  border-top: 1px solid var(--lu-line);
+}
+
+.lu-faq__question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  width: 100%;
+  min-height: 44px;
+  padding: 22px 0;
+  border: none;
+  background: none;
+  color: var(--lu-text-hi);
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+}
+
+.lu-faq__icon {
+  flex-shrink: 0;
+  font-size: 22px;
+  font-weight: 300;
+  color: var(--lu-text-mid);
+  transition: transform 0.32s var(--lu-ease);
+}
+
+.lu-faq__icon--open {
+  transform: rotate(45deg);
+}
+
+.lu-faq__panel {
+  display: grid;
+  grid-template-rows: 0fr;
+  overflow: hidden;
+  transition: grid-template-rows 0.4s var(--lu-ease);
+}
+
+.lu-faq__panel--open {
+  grid-template-rows: 1fr;
+}
+
+.lu-faq__clip {
+  overflow: hidden;
+}
+
+.lu-faq__answer {
+  margin-bottom: 22px;
+}

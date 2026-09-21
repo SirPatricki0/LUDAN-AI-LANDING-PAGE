@@ -1,0 +1,54 @@
+.lu-commit__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.lu-commit {
+  padding: 22px;
+  border-radius: 16px;
+}
+
+.lu-commit__head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.lu-commit__title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--lu-text-hi);
+}
+
+.lu-commit__desc {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--lu-text-mid);
+}
+
+.lu-standard {
+  padding-top: 26px;
+  border-top: 1px solid rgba(230, 122, 13, 0.3);
+}
+
+.lu-standard__title {
+  margin-bottom: 18px;
+  letter-spacing: 0.28em;
+}
+
+.lu-standard__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.lu-standard__item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--lu-text-mid);
+}

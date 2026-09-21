@@ -1,0 +1,39 @@
+.lu-method__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+  gap: 24px;
+}
+
+.lu-method {
+  position: relative;
+  padding: 26px;
+  border-radius: var(--lu-radius);
+}
+
+.lu-method__number {
+  margin-bottom: 14px;
+  font-size: 0.6875rem;
+  font-weight: 800;
+  letter-spacing: 0.22em;
+  color: var(--lu-copper);
+  font-variant-numeric: tabular-nums;
+  transition: color 0.32s, text-shadow 0.32s;
+}
+
+.lu-method:hover .lu-method__number {
+  color: var(--lu-amber);
+  text-shadow: 0 0 14px rgba(255, 149, 5, 0.5);
+}
+
+.lu-method__icon {
+  margin-bottom: 18px;
+}
+
+.lu-method__eyebrow {
+  margin-bottom: 8px;
+  color: var(--lu-copper-lite);
+}
+
+.lu-method__title {
+  margin-bottom: 8px;
+}

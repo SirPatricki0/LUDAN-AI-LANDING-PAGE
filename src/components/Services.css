@@ -1,0 +1,49 @@
+.lu-services__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+  gap: 24px;
+}
+
+.lu-service {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding: 28px;
+  border-radius: var(--lu-radius);
+  transition: transform 0.4s var(--lu-ease), border-color 0.4s var(--lu-ease);
+}
+
+.lu-service:hover {
+  transform: translateY(-6px);
+  border-color: var(--lu-line-warm);
+}
+
+.lu-service__spotlight {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: radial-gradient(420px circle at var(--mx, 50%) var(--my, 50%), rgba(230, 122, 13, 0.16), transparent 62%);
+}
+
+.lu-service__body {
+  position: relative;
+  z-index: 1;
+}
+
+.lu-service__icon {
+  margin-bottom: 20px;
+}
+
+.lu-service__title {
+  margin-bottom: 10px;
+  letter-spacing: -0.02em;
+}
+
+.lu-service__desc {
+  margin-bottom: 14px;
+}
+
+.lu-service__footer {
+  font-size: 12px;
+  color: var(--lu-text-low);
+}

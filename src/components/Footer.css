@@ -1,0 +1,112 @@
+.lu-footer {
+  position: relative;
+  overflow: hidden;
+  padding-block: 80px 32px;
+  background: var(--lu-void);
+  border-top: 1px solid var(--lu-line);
+}
+
+.lu-footer__mark {
+  position: absolute;
+  bottom: -5vh;
+  left: 50%;
+  z-index: 0;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
+  font-size: 24vw;
+  font-weight: 800;
+  line-height: 0.75;
+  letter-spacing: -0.05em;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(230, 122, 13, 0.1);
+  background: linear-gradient(180deg, rgba(230, 122, 13, 0.12) 0%, transparent 62%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.lu-footer__inner {
+  z-index: 1;
+}
+
+.lu-footer__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+  margin-bottom: 56px;
+}
+
+.lu-footer__brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.lu-footer__name {
+  font-size: 19px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  transform: translateY(0.5px);
+}
+
+.lu-footer__tagline {
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: var(--lu-text-mid);
+}
+
+.lu-footer__heading {
+  margin-bottom: 16px;
+  letter-spacing: 0.24em;
+}
+
+.lu-footer__links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.lu-footer__links a {
+  font-size: 14px;
+  color: var(--lu-text-mid);
+  overflow-wrap: anywhere;
+  transition: color 0.2s;
+}
+
+.lu-footer__links a:hover {
+  color: var(--lu-text-hi);
+}
+
+.lu-footer__bottom {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 24px 0 0;
+  border-top: 1px solid var(--lu-line);
+}
+
+.lu-footer__legal {
+  letter-spacing: 0.15em;
+}
+
+.lu-footer__top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--lu-line);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--lu-text-hi);
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.lu-footer__top:hover {
+  transform: translateY(-6px);
+}

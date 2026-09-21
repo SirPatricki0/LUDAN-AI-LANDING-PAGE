@@ -1,0 +1,46 @@
+.lu-manifesto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 85svh;
+  padding: 0 var(--lu-gutter);
+  background: var(--lu-deep);
+  text-align: center;
+}
+
+.lu-manifesto__inner {
+  position: relative;
+  max-width: 900px;
+}
+
+.lu-manifesto__line {
+  max-width: 19ch;
+  margin: 0 auto;
+  font-size: clamp(1.85rem, 4.2vw, 3.8rem);
+  font-weight: 800;
+  line-height: 1.14;
+  color: var(--lu-text-hi);
+  clip-path: inset(0 100% 0 0);
+  transition: clip-path 1.3s var(--lu-ease);
+}
+
+.lu-manifesto__line--second {
+  margin-top: 8px;
+  transition-delay: 0.3s;
+}
+
+.lu-manifesto__line--in {
+  clip-path: inset(0 0 0 0);
+}
+
+.lu-manifesto__signature {
+  margin-top: 64px;
+  letter-spacing: 0.28em;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lu-manifesto__line {
+    clip-path: inset(0 0 0 0);
+    transition: none;
+  }
+}

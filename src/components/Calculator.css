@@ -1,0 +1,95 @@
+.lu-calc {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+  gap: 40px;
+  padding: clamp(24px, 4vw, 44px);
+  border-radius: var(--lu-radius-lg);
+}
+
+.lu-calc__label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--lu-text-hi);
+}
+
+.lu-calc__value {
+  color: var(--lu-copper-lite);
+  font-variant-numeric: tabular-nums;
+}
+
+.lu-calc__slider {
+  width: 100%;
+  margin-bottom: 26px;
+}
+
+.lu-calc__options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.lu-calc__option {
+  padding: 9px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--lu-line);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--lu-text-mid);
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.lu-calc__option--active {
+  border-color: var(--lu-line-warm);
+  background: linear-gradient(135deg, rgba(230, 122, 13, 0.25), rgba(255, 149, 5, 0.15));
+  color: var(--lu-copper-pale);
+}
+
+.lu-calc__results {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+.lu-calc__result-label {
+  margin-bottom: 6px;
+}
+
+.lu-calc__result {
+  font-size: clamp(1.5rem, 2.4vw, 2rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  font-variant-numeric: tabular-nums;
+}
+
+.lu-calc__result--amber {
+  color: var(--lu-amber);
+}
+
+.lu-calc__result--lite {
+  color: var(--lu-copper-lite);
+}
+
+.lu-calc__chart {
+  display: block;
+  overflow: visible;
+}
+
+.lu-calc__disclaimer {
+  margin-top: 16px;
+  text-align: center;
+}
+
+.lu-calc__cta {
+  margin-top: 32px;
+  text-align: center;
+}
+
+.lu-calc__cta p {
+  margin-top: 12px;
+  font-size: 12px;
+  color: var(--lu-text-low);
+}
